@@ -40,3 +40,17 @@ I'm a team player. I am very willing to learn and get new skills.
   typeOfSum('12', 12);
   
 ```  
+
+## Education
+
+> University: Belarusian National Technical University, Engineer
+
+## Courses:
+
+> JavaScript Manual on https://learn.javascript.ru/
+
+> RS Schools Course «JavaScript/Front-end. Stage 0»
+
+## English
+
+> A2 (I had been practicing English, when I went to Egypt. At the University I studied English about three years.)
