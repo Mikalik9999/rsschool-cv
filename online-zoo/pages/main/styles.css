@@ -1,6 +1,6 @@
 header {
     position: absolute;
-    width: 1600px;
+    width: 100%;
     height: 80px;
     left: 0;
     top: 0;
@@ -26,7 +26,7 @@ body {
     margin: 14px 0 14px 13.75%;
 }
 
-.logo > h2 {
+.logo > h1, .logo > h1 > a {
     font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -35,6 +35,25 @@ body {
     text-align: center;
     color: #FFFFFF;
     margin: 0;
+}
+
+#logoFooter > h2, #logoFooter > h2 > a {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#logoFooter > h2 > a {
+    text-decoration: none;
+}
+
+.logo > h1 > a {
+    text-decoration: none;
 }
 
 .logo > img {
@@ -79,10 +98,11 @@ nav {
 }
 
 main {
-    background-image: url("../../assets/images/Giant Panda.png");
+    background-image: url("Giant Panda.png");
     background-repeat: no-repeat;
-    width: 1600px;
+    width: 100%;
     height: 780px;
+    background-size: 100%;
 }
 
 .online {
@@ -92,7 +112,7 @@ main {
     width: 298px;
     height: 54px;
     margin-top: 626px;
-    margin-left: 64.44%;
+    margin-left: 61.44%;
     font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -101,12 +121,49 @@ main {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    padding-left: 10px;
+}
+
+.online:hover, .aboutDonate:hover{
+    background: red;
+    color: black;
+    box-shadow: inset 0 0 0 3px black;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+    }
+}
+
+li:hover {
+    animation: bounce 1s;
+}
+
+#about:hover {
+    animation: none;
+}
+
+.right:hover, .left:hover {
+    animation: bounce 1s;
+}
+
+.scroll > button:hover {
+    background-color: red;
 }
 
 .ellipse {
     width: 574px;
     height: 474px;
-    background-image: url("../../assets/images/Ellipse 6.png");
+    background-image: url("Ellipse 6.png");
     background-repeat: no-repeat;
     margin-top: 92px;
     position: absolute;
@@ -184,26 +241,32 @@ section {
     padding-left: 20px;
 }
 
+.flower > img {
+    min-width: 204px;
+}
+
 article {
-    height: 1212px;
+    height: 1107px;
     background:
-        url("../../assets/images/palm_foto.png") 0 100% no-repeat,
-        url("../../assets/images/strelitzia.png") 100% 100% no-repeat;
-    padding-top: 180px;
+        url("palm_foto.png") 0 100% no-repeat,
+        url("strelitzia.png") 100% 100% no-repeat;
+    padding-top: 92px;
 }
 
 .left {
-    background: url("../../assets/images/left.svg") 0 0 no-repeat;
+    background: url("left.svg") 0 0 no-repeat;
     width: 62px;
     height: 62px;
     border: 0;
+    margin-bottom: 6px;
 }
 
 .right {
-    background: url("../../assets/images/right.svg") 0 0 no-repeat;
+    background: url("right.svg") 0 0 no-repeat;
     width: 62px;
     height: 62px;
     border: 0;
+    margin-bottom: 4px;
 }
 
 .oneIcon {
@@ -221,7 +284,7 @@ article {
 .iconPandas > h6 {
     font-weight: 500;
     font-size: 16px;
-    line-height: 140%;
+    line-height: 109%;
 }
 
 .iconPandas > p {
@@ -231,7 +294,7 @@ article {
 }
 
 .iconPandas {
-    padding: 8px 0 8px 0;
+    padding: 8px 0 11px 0;
 }
 
 .space {
@@ -255,6 +318,18 @@ article {
     margin-right: 20px;
 }
 
+#iconGorillas {
+    width: 362px;
+}
+
+#iconPenguins {
+    margin-right: 22px;
+}
+
+#iconPenguins > div {
+    margin-left: 13px;
+}
+
 #eat {
     align-items: center;
 }
@@ -267,16 +342,22 @@ article {
     height: 33px;
     width:33px ;
     background:
-            url("../../assets/images/banana.svg") 0 100% no-repeat,
-            url("../../assets/images/bamboo.png") 100% 100% no-repeat;
+            url("banana.svg") 0 100% no-repeat,
+            url("bamboo.png") 62% 100% no-repeat;
+    margin-top: 7px;
 }
 
 .fish {
-    height: 33px;
-    width:33px ;
+    height: 44px;
+    width:44px ;
     background:
-            url("../../assets/images/fish_icon.svg") 0 100% no-repeat,
-            url("../../assets/images/steak_icon.png") 100% 100% no-repeat;
+            url("fish_icon.svg") 101% 75% no-repeat,
+            url("steak_icon.png") 93% 52% no-repeat;
+    padding-left: 135px;
+}
+
+#gorillas {
+    margin-left: 13px;
 }
 
 #eat {
@@ -399,10 +480,15 @@ address > div > p > span {
     border: 1px solid #FA6F32;
     align-items: center;
     margin-bottom: 30px;
+    border-radius: 5px;
 }
 
 #monkeyPay, #payment {
     max-width: 168px;
+}
+
+#payment {
+    padding-left: 4px;
 }
 
 .vectorRight {
@@ -410,7 +496,7 @@ address > div > p > span {
 }
 
 #aboutPayCard {
-    margin-right: 30px;
+    margin-right: 22px;
 }
 
 #aboutPayment {
@@ -424,7 +510,7 @@ address > div > p > span {
 
 aside {
     height: 919px;
-    background: url(../../assets/images/leav.svg) 100% 126% no-repeat;
+    background: url(leav.svg) 100% 126% no-repeat;
 }
 
 .aboutDonate {
@@ -467,24 +553,27 @@ aside > div {
 .review {
     width: 23.1%;
     background: #F1F3F2;
-    border-radius: 20px;
+    background-clip: padding-box;
     height: 391px;
     position: relative;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
-.review::before {
-    content: "";
+.review:after {
+    content: " ";
     position: absolute;
-    inset: 0;
-    border-radius: 20px;
-    padding: 2px;
-    background:linear-gradient(to top left, #FEBDAB 36%, #F3A9F8 44%, #E0D8F0 100%, #EAF7FE 100%, #EAF7FE 100%);
-    -webkit-mask:
-            linear-gradient(#fff 0 0) content-box,
-            linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
+    top: -1px;
+    right: -1px;
+    left: -1px;
+    bottom: -1px;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(to top left, #FEBDAB 36%, #F3A9F8 44%, #E0D8F0 100%, #EAF7FE 100%, #EAF7FE 100%);
 }
+
+
 .reviews {
     display: flex;
     gap: 30px;
@@ -520,7 +609,7 @@ aside > div {
 }
 
 .review > p {
-    margin: 10px 15px 19px 16px;
+    margin: 6px 12px 18px 16px;
     font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -533,10 +622,9 @@ aside > div {
 
 .scroll {
     width: 51.64%;
-    height: 8px;
     background: #F5F7F6;
     border-radius: 5px;
-    border-color: #F2785C;
+    border: 1px solid #F2785C;
     display: flex;
     margin: 21px auto 32px auto;
 }
@@ -591,7 +679,7 @@ footer > div {
 .submit {
     width: 367px;
     height: 443px;
-    margin-left: 10%;
+    margin-left: 11%;
 }
 
 .submit > p {
@@ -601,13 +689,19 @@ footer > div {
     font-size: 24px;
     line-height: 120%;
     color: #FFFFFF;
+    margin: 41px 0 13px 7px;
 }
 
 .email {
     display: flex;
+    margin: 0 -5px 0 5px;
 }
 
-.email > input {
+.email > form {
+    display: flex;
+}
+
+.email > form > input {
     font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -622,7 +716,7 @@ footer > div {
     padding: 0;
 }
 
-.emailSubmit {
+.emailSubmit >input {
     background: #F1F3F2;
     border: 1px solid #4B9200;
     border-radius: 5px;
