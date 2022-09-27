@@ -1,0 +1,747 @@
+header {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    top: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    box-sizing: border-box;
+    position: absolute;
+    width: 82px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    margin: 14px 0 14px 13.75%;
+}
+
+.logo > h1, .logo > h1 > a {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#logoFooter > h2, #logoFooter > h2 > a {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#logoFooter > h2 > a {
+    text-decoration: none;
+}
+
+.logo > h1 > a {
+    text-decoration: none;
+}
+
+.logo > img {
+    position: absolute;
+    padding: 20% 0 0 11.25%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 22.81%;
+}
+
+.nav-ul {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 58px;
+}
+
+#about > a, #aboutFooter > a {
+    color: #F2785C;
+}
+
+.nav-ul > li > a, .figma > a {
+    text-decoration:none;
+    color: #FFFFFF;
+}
+
+.figma {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    margin-left: 27.375%;
+}
+
+main {
+    background-image: url("Giant Panda.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 780px;
+    background-size: 100%;
+}
+
+.online {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    border: 0;
+    width: 298px;
+    height: 54px;
+    margin-top: 626px;
+    margin-left: 61.44%;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+.online:hover, .aboutDonate:hover{
+    background: red;
+    color: black;
+    box-shadow: inset 0 0 0 3px black;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+    }
+}
+
+li:hover {
+    animation: bounce 1s;
+}
+
+#about:hover {
+    animation: none;
+}
+
+.right:hover, .left:hover {
+    animation: bounce 1s;
+}
+
+.scroll > button:hover {
+    background-color: red;
+}
+
+.ellipse {
+    width: 574px;
+    height: 474px;
+    background-image: url("Ellipse 6.png");
+    background-repeat: no-repeat;
+    margin-top: 92px;
+    position: absolute;
+    margin-left: 50.44%;
+}
+
+.ellipse > p {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 106px;
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 74px;
+    padding-left: 74px;
+}
+
+.yellowText {
+    color: #FFEE2E;
+}
+
+section {
+    display: flex;
+    margin-top: 12px;
+}
+
+.cap {
+    margin-top: 128px;
+    margin-left: 13.68%;
+    display: flex;
+}
+
+.cap > div  {
+    padding-left: 7.5%;
+    margin: 0;
+}
+
+.cap > div > p {
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    color: #333B41;
+    font-weight: 400;
+}
+
+.oneCap {
+    font-size: 48px;
+    line-height: 120%;
+    padding-bottom: 20px;
+}
+
+.twoCap {
+    font-size: 16px;
+    line-height: 130%;
+    padding-bottom: 54px;
+}
+
+.threeCap {
+    font-size: 24px;
+    line-height: 120%;
+    padding-bottom: 34px;
+}
+
+.fourCap {
+    font-size: 16px;
+    line-height: 140%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.flower {
+    padding-left: 20px;
+}
+
+.flower > img {
+    min-width: 204px;
+}
+
+article {
+    height: 1107px;
+    background:
+        url("palm_foto.png") 0 100% no-repeat,
+        url("strelitzia.png") 100% 100% no-repeat;
+    padding-top: 92px;
+}
+
+.left {
+    background: url("left.svg") 0 0 no-repeat;
+    width: 62px;
+    height: 62px;
+    border: 0;
+    margin-bottom: 6px;
+}
+
+.right {
+    background: url("right.svg") 0 0 no-repeat;
+    width: 62px;
+    height: 62px;
+    border: 0;
+    margin-bottom: 4px;
+}
+
+.oneIcon {
+    width: 366px;
+    margin-left: 30px;
+    border: 1px solid #FA6F32;
+}
+
+.iconPandas > h6, .iconPandas > p {
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+}
+
+.iconPandas > h6 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 109%;
+}
+
+.iconPandas > p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+}
+
+.iconPandas {
+    padding: 8px 0 11px 0;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 12px;
+}
+
+#iconsOne, #iconsTwo, #eat {
+    display: flex;
+}
+
+#iconToed, #iconPandas {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+#iconGorillas, #iconPenguins {
+    padding-right: 0;
+    margin-right: 20px;
+}
+
+#iconGorillas {
+    width: 362px;
+}
+
+#iconPenguins {
+    margin-right: 22px;
+}
+
+#iconPenguins > div {
+    margin-left: 13px;
+}
+
+#eat {
+    align-items: center;
+}
+
+#iconsTwo {
+    padding-top: 20px;
+}
+
+.banana {
+    height: 33px;
+    width:33px ;
+    background:
+            url("banana.svg") 0 100% no-repeat,
+            url("bamboo.png") 62% 100% no-repeat;
+    margin-top: 7px;
+}
+
+.fish {
+    height: 44px;
+    width:44px ;
+    background:
+            url("fish_icon.svg") 101% 75% no-repeat,
+            url("steak_icon.png") 93% 52% no-repeat;
+    padding-left: 135px;
+}
+
+#gorillas {
+    margin-left: 13px;
+}
+
+#eat {
+    align-items: center;
+    justify-content: center;
+}
+
+#onlineFavorite {
+    margin: 0;
+}
+
+#aboutFavorite {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+address {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%,
+    rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
+    linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    display: flex;
+    justify-content: center;
+}
+
+address > div {
+    width: 72.5%;
+    height: 835px;
+    background: rgba(253, 253, 255, 0.52);
+    border-radius: 20px;
+    margin: 69px 0 100px 0;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+address > div > h3 {
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #FE9013;
+    margin: 41px 0 30px 0;
+    font-weight: 400;
+}
+
+address > div > h5 {
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+    padding-left: 99px;
+    margin: 0 0 40px 0;
+    font-weight: 400;
+
+}
+
+address > div > h6 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333B41;
+    padding-left: 99px;
+    margin: 0;
+}
+
+address > div > p {
+    font-size: 16px;
+    line-height: 130%;
+    color: #333B41;
+    padding-left: 99px;
+    padding-right: 198px;
+    margin: 10px 0 0 0;
+}
+
+address > div > p > span {
+    text-decoration: none;
+    border-bottom: 1px solid #FE9013;
+    padding-bottom: 1px;
+}
+
+.how {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    color: #333B41;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.how > h3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    margin: 60px 0 40px 0;
+}
+
+#aboutFriend {
+    margin: 60px 0 0 0 ;
+}
+
+.worksText {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+    display: flex;
+}
+
+.payCard {
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    width: 168px;
+    height: 168px;
+    border: 1px solid #FA6F32;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+#monkeyPay, #payment {
+    max-width: 168px;
+}
+
+#payment {
+    padding-left: 4px;
+}
+
+.vectorRight {
+    padding-top: 62px;
+}
+
+#aboutPayCard {
+    margin-right: 22px;
+}
+
+#aboutPayment {
+    margin-left: 31px;
+    margin-right: 30px;
+}
+
+#aboutMonkeyPay {
+    margin-left: 31px;
+}
+
+aside {
+    height: 919px;
+    background: url(leav.svg) 100% 126% no-repeat;
+}
+
+.aboutDonate {
+    width: 298px;
+    height: 54px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 5px;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 0;
+}
+
+aside > div > h3 {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    color: #333B41;
+    margin: 140px 0 47px 0;
+}
+
+aside {
+    justify-content: center;
+    display: flex;
+}
+
+aside > div {
+    width: 72.5%;
+    justify-content: center;
+}
+
+.review {
+    width: 23.1%;
+    background: #F1F3F2;
+    background-clip: padding-box;
+    height: 391px;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.review:after {
+    content: " ";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    left: -1px;
+    bottom: -1px;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(to top left, #FEBDAB 36%, #F3A9F8 44%, #E0D8F0 100%, #EAF7FE 100%, #EAF7FE 100%);
+}
+
+
+.reviews {
+    display: flex;
+    gap: 30px;
+}
+
+.firstReview {
+    display: flex;
+    align-items: center;
+}
+
+.firstReview > div > h5 {
+    margin: 15px 0 1px 0;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.firstReview > div > h6 {
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #BDBDBD;
+}
+
+.firstUser {
+    margin: 15px 10px 0 16px;
+}
+
+.review > p {
+    margin: 6px 12px 18px 16px;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #767474;
+    overflow: hidden;
+    height: 309px;
+}
+
+.scroll {
+    width: 51.64%;
+    background: #F5F7F6;
+    border-radius: 5px;
+    border: 1px solid #F2785C;
+    display: flex;
+    margin: 21px auto 32px auto;
+}
+
+.scroll > button {
+    padding: 0;
+    width: 115px;
+    background-color: #FE9013;
+    border: 0;
+    height: 6px;
+    margin: 0;
+}
+
+footer {
+    height: 443px ;
+    background: black;
+}
+
+footer > div {
+    width: 72.5%;
+    display: flex;
+    margin: auto;
+}
+
+#donate {
+    margin: 161px 0 0 0;
+}
+
+#logoFooter {
+    margin: 41px 0 0 0;
+}
+
+.social {
+    padding: 0;
+    margin-top: 44px;
+}
+
+.social > li {
+    height: 26px;
+    margin-bottom: 10px;
+}
+
+.navFooter {
+    margin: 102.5% 0 14% 28%;
+    width: 102%;
+}
+
+.navFooter > ul {
+    font-weight: 400;
+}
+
+.submit {
+    width: 367px;
+    height: 443px;
+    margin-left: 11%;
+}
+
+.submit > p {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin: 41px 0 13px 7px;
+}
+
+.email {
+    display: flex;
+    margin: 0 -5px 0 5px;
+}
+
+.email > form {
+    display: flex;
+}
+
+.email > form > input {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #BDBDBD;
+    border-radius: 2px;
+    width: 228px;
+    height: 40px;
+    background-color: black;
+    border: 1px solid #F9804B;
+    padding: 0;
+}
+
+.emailSubmit >input {
+    background: #F1F3F2;
+    border: 1px solid #4B9200;
+    border-radius: 5px;
+    width: 129px;
+    height: 42px;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #4B9200;
+    margin-left: 10px;
+}
+
+.designed {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-top: 59%;
+    margin-left: 38%;
+}
+
+.RSS {
+    margin-top: 10px;
+}
