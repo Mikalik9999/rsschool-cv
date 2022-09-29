@@ -1,0 +1,468 @@
+header {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    top: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    box-sizing: border-box;
+    position: absolute;
+    width: 82px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    margin: 14px 0 14px 13.75%;
+}
+
+.logo > h1, .logo > h1 > a {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#logoFooter > h2, #logoFooter > h2 > a {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#logoFooter > h2 > a {
+    text-decoration: none;
+}
+
+.logo > h1 > a {
+    text-decoration: none;
+}
+
+.logo > img {
+    position: absolute;
+    padding: 20% 0 0 11.25%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 22.81%;
+}
+
+.nav-ul {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 58px;
+}
+
+
+
+.nav-ul > li > a, .figma > a {
+    text-decoration:none;
+    color: #FFFFFF;
+}
+
+.figma {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    margin-left: 27.375%;
+}
+
+main {
+    background-image: url("pandaDonate.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 470px;
+    background-size: 100%;
+    margin-top: 80px;
+}
+
+section {
+    height: 1482px;
+    margin-top: -80px;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.feedFriends {
+    background: #fee6d2;
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    height: 964px;
+    width: 72.5%;
+    margin: 60px 220px;
+}
+
+.feedFriends > p {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+    margin-left: 92px;
+}
+
+.feedFriends > h2 {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: #FE9013;
+    margin-left: 342px;
+    padding-top: 40px;
+    margin-bottom: auto;
+}
+
+.feedFriends > input {
+    width: 263px;
+    height: 54px;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    background-color: #fee6d2;
+    margin-left: 446px;
+    margin-top: 43px;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.monthly {
+    display: flex;
+    gap: 10px;
+}
+
+.payDonate {
+    display: flex;
+    gap: 52px;
+    margin-left: 474px;
+    margin-top: 5px;
+}
+
+.payDonate > form {
+    display: flex;
+    gap: 50px;
+}
+
+.payDonate >form > p{
+    display: flex;
+    align-items: center;
+}
+
+.payDonate >form > p > input{
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fe9013;
+    margin-right: 5px;
+}
+
+.payDonate >form > p > input:checked {
+    border: 7px solid #fe9013;
+}
+
+.money {
+display: flex;
+flex-direction: column;
+}
+
+.price , .progress {
+margin: auto;
+}
+
+.price{
+margin-left: 92px;
+}
+
+.diet {
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+text-align: center;
+color: #333B41;
+}
+
+.dietPanda {
+display: flex;
+align-items: center;
+margin-left: 307px;
+margin-top: 60px;
+margin-bottom: 40px;
+}
+
+.fourDiet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 11px;
+  margin-top: 66px;
+}
+
+.and {
+margin-right: 64px;
+margin-top: 25px;
+}
+
+#donateLi > a  {
+color: #F2785C;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+#amount {
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #000000;
+margin-left: 96px;
+}
+
+.donate {
+background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+border-radius: 25px;
+width: 298px;
+height: 54px;
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+border: 0;
+}
+
+#donateBtn {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+.share {
+display: flex;
+justify-content: center;
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #333B41;
+margin-top: 30px;
+}
+
+.online:hover, .aboutDonate:hover, .donate:hover, .aboutDonate{
+background: red;
+color: black;
+box-shadow: inset 0 0 0 3px black;
+}
+
+section > h3 {
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 130%;
+color: #FFFFFF;
+margin-left: 220px;
+margin-top: 0;
+margin-bottom: 0;
+padding-top: 39px;
+}
+
+.information {
+color: #FE9013;
+}
+
+
+
+section > p {
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+color: #FFFFFF;
+margin: 5px 220px;
+}
+
+.aboutDonate {
+width: 298px;
+height: 54px;
+background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+border-radius: 5px;
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+border: 0;
+}
+
+@keyframes bounce {
+0%, 20%, 60%, 100% {
+    transform: translateY(0);
+}
+
+40% {
+    transform: translateY(-20px);
+}
+
+80% {
+    transform: translateY(-10px);
+}
+}
+
+li:hover {
+animation: bounce 1s;
+}
+
+footer {
+height: 443px ;
+background: black;
+margin-top: -4px;
+}
+
+footer > div {
+width: 72.5%;
+display: flex;
+margin: auto;
+}
+
+#donate {
+margin: 161px 0 0 0;
+}
+
+#logoFooter {
+margin: 41px 0 0 0;
+}
+
+.social {
+padding: 0;
+margin-top: 44px;
+}
+
+.social > li {
+height: 26px;
+margin-bottom: 10px;
+}
+
+.navFooter {
+margin: 102.5% 0 14% 28%;
+width: 102%;
+}
+
+.navFooter > ul {
+font-weight: 400;
+}
+
+.submit {
+width: 367px;
+height: 443px;
+margin-left: 11%;
+}
+
+.submit > p {
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+color: #FFFFFF;
+margin: 41px 0 13px 7px;
+}
+
+.email {
+display: flex;
+margin: 0 -5px 0 5px;
+}
+
+.email > form {
+display: flex;
+}
+
+.email > form > input {
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #BDBDBD;
+border-radius: 2px;
+width: 228px;
+height: 40px;
+background-color: black;
+border: 1px solid #F9804B;
+padding: 0 0 0 5px;
+}
+
+.emailSubmit >input {
+background: #F1F3F2;
+border: 1px solid #333B41;
+border-radius: 5px;
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #000000;
+width: 129px;
+height: 42px;
+margin-left: 10px;
+}
+
+.designed {
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 100;
+font-size: 16px;
+line-height: 130%;
+color: #FFFFFF;
+margin-top: 59%;
+margin-left: 38%;
+}
+
+.RSS {
+margin-top: 10px;
+}
