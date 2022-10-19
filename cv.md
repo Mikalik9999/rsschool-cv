@@ -32,12 +32,7 @@ I'm a team player. I am very willing to learn and get new skills.
 ## Code Example
 
  ```
-  function typeOfSum(a, b) {
-  let c = typeof (a + b)
-  return c
-  }
-    
-  typeOfSum('12', 12);
+  https://github.com/Mikalik9999
   
 ```  
 
